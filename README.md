@@ -1,124 +1,46 @@
-# Savanna Grill — Restaurant Website
+# Savanna Grill
 
-A fully responsive restaurant website for **Savanna Grill**, a premium East African fictional dining experience in Westlands, Nairobi.
+Savanna Grill is a responsive restaurant website inspired by East African food and hospitality. I built it with HTML, CSS, and vanilla JavaScript, with layouts for phones, tablets, and desktops.
 
-Built with plain HTML, CSS, and JavaScript — no frameworks, no build tools. Push to GitHub, deploy to Vercel in minutes.
+## What’s included
 
----
+- A rotating hero banner and mobile-friendly navigation
+- Restaurant, menu, events, and contact sections
+- Scroll and hover animations
+- A reservation form that opens an email draft with the submitted details
+- A newsletter form with client-side feedback
+- Responsive styling and semantic HTML
 
-## Features
+The forms are front-end demonstrations: reservations are not stored in a database, and newsletter signups are not sent to a mailing service.
 
-- Responsive layout — mobile, tablet, desktop
-- Hero image slider with auto-advance and keyboard/mouse pause
-- Scroll-triggered reveal animations with staggered card delays
-- Parallax effect on the About section (bug-fixed from original)
-- Active navigation link highlighting on scroll
-- Reservation form with validation and mailto fallback
-- Newsletter form with email validation
-- Preloader animation
-- Back-to-top button
-- Semantic HTML5, proper ARIA labels, correct `alt` text throughout
+## Run locally
 
----
-
-## Project Structure
-
-```
-savanna-grill/
-├── index.html
-├── favicon.svg
-└── assets/
-    ├── css/
-    │   └── style.css
-    ├── js/
-    │   └── script.js
-    └── images/
-        ├── hero-slider-1.jpg
-        ├── hero-slider-2.jpg
-        ├── hero-slider-3.jpg
-        ├── about-banner.jpg
-        ├── about-abs-image.jpg
-        ├── special-dish-banner.jpg
-        ├── logo.svg
-        ├── badge-1.png
-        ├── badge-2.png
-        ├── testi-avatar.jpg
-        ├── testimonial-bg.jpg
-        ├── footer-bg.jpg
-        ├── form-pattern.png
-        ├── hero-icon.png
-        ├── separator.svg
-        ├── menu-1.png … menu-6.png
-        ├── service-1.jpg … service-3.jpg
-        ├── event-1.jpg … event-3.jpg
-        ├── features-icon-1.png … features-icon-4.png
-        └── shape-1.png … shape-9.png
-```
-
----
-
-## Local Development
-
-No build step needed.
+There is no build step or package installation required. From the project directory, start a local server:
 
 ```bash
-# Clone the repo
-git clone https://github.com/YOUR_USERNAME/savanna-grill.git
-cd savanna-grill
-
-# Open in browser — any static file server works
-npx serve .
-# or just open index.html directly in your browser
+python -m http.server 8000
 ```
 
----
+Then open [http://localhost:8000](http://localhost:8000) in your browser. You can also open `index.html` directly, though a local server is recommended.
 
-## Deploy to Vercel
+## Deploy
 
-### Option A — Vercel CLI (fastest)
+This is a static site and can be deployed on Vercel without a build command:
 
-```bash
-npm install -g vercel
-vercel
-```
+1. Import the repository into Vercel.
+2. Select **Other** as the framework preset if prompted.
+3. Leave the build command empty and use `.` as the output directory.
+4. Deploy the project.
 
-Follow the prompts. Your site is live in under 60 seconds.
+## Project files
 
-### Option B — GitHub + Vercel Dashboard
+- `index.html` — page content and structure
+- `assets/css/style.css` — layout, colors, and responsive styles
+- `assets/js/script.js` — navigation, slider, animation, and form behavior
+- `assets/images/` — logos, photography, and decorative assets
 
-1. Push this repository to GitHub
-2. Go to [vercel.com](https://vercel.com) → **Add New Project**
-3. Import your GitHub repo
-4. Framework preset: **Other** (it's a static site)
-5. Build command: *(leave blank)*
-6. Output directory: *(leave blank or `.`)*
-7. Click **Deploy**
+## Author
 
-Vercel will auto-deploy every time you push to `main`.
-
----
-
-## Code Improvements vs Original Template
-
-| Issue | Fix |
-|---|---|
-| `body { height: 300vh }` — leftover dev hack | Removed |
-| `hover:shine` class — colon in class name is non-standard | Renamed to `hover-shine` |
-| Parallax bug — `x` was multiplied inside loop, compounding on each item | Fixed: each item now independently calculates offset from base values |
-| Placeholder email (Cloudflare-obfuscated) | Replaced with real email |
-| All Lorem Ipsum content | Replaced with real Savanna Grill / Nairobi content |
-| No ARIA labels on nav buttons | Added throughout |
-| Vague `alt=""` on hero images | Descriptive alt text added |
-| No scroll reveal on cards | Added `IntersectionObserver` with staggered CSS delays |
-| No active nav link tracking | Added `IntersectionObserver` for section-based nav highlighting |
-| No form validation | Reservation and newsletter forms now validate and provide user feedback |
-| No parallax pause on mobile | Touch/pointer detection can be added — currently only runs on `mousemove` |
-
----
-
-## Contact
-
-Brian Otieno Obonyo  
-brianprofocus@gmail.com  
-[brianobonyo.dev](https://brianobonyo.dev)  
-+254 741 522 175
+Brian Obonyo  
+[LinkedIn](https://www.linkedin.com/in/brianobonyo/) · [Portfolio](https://brianobonyo.dev)  
+[brianprofocus@gmail.com](mailto:brianprofocus@gmail.com)

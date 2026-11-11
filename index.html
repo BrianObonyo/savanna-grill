@@ -9,7 +9,7 @@
   <title>Savanna Grill — Premium Dining in Nairobi, Kenya</title>
   <meta name="title"       content="Savanna Grill — Premium Dining in Nairobi, Kenya">
   <meta name="description" content="Savanna Grill brings bold East African flavours and contemporary culinary craft together in Westlands, Nairobi. Reserve your table today.">
-  <meta name="author"      content="Brian Otieno Obonyo">
+  <meta name="author"      content="Brian Obonyo">
   <meta name="robots"      content="index, follow">
 
   <meta property="og:type"        content="restaurant">
@@ -86,50 +86,57 @@
         <img src="./assets/images/logo.png" width="160" height="50" alt="Savanna Grill logo">
       </a>
 
-      <nav class="navbar" data-navbar aria-label="Main navigation">
+      <nav class="navbar" id="primary-navigation" data-navbar aria-label="Main navigation">
 
         <button class="close-btn" aria-label="Close menu" data-nav-toggler>
           <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
         </button>
 
-        <a href="#top" class="logo">
-          <img src="./assets/images/logo.svg" width="160" height="50" alt="Savanna Grill logo">
+        <a href="#top" class="logo" aria-label="Savanna Grill — Home">
+          <img src="./assets/images/logo.png" width="160" height="50" alt="Savanna Grill logo">
         </a>
+
+        <p class="navbar-eyebrow label-2">Explore Savanna</p>
 
         <ul class="navbar-list">
           <li class="navbar-item">
-            <a href="#home" class="navbar-link hover-underline active">
+            <a href="#home" class="navbar-link hover-underline active" aria-current="page">
               <div class="separator"></div>
+              <span class="nav-index" aria-hidden="true">01</span>
               <span class="span">Home</span>
             </a>
           </li>
           <li class="navbar-item">
             <a href="#menu" class="navbar-link hover-underline">
               <div class="separator"></div>
+              <span class="nav-index" aria-hidden="true">02</span>
               <span class="span">Menu</span>
             </a>
           </li>
           <li class="navbar-item">
             <a href="#about" class="navbar-link hover-underline">
               <div class="separator"></div>
+              <span class="nav-index" aria-hidden="true">03</span>
               <span class="span">About</span>
             </a>
           </li>
           <li class="navbar-item">
             <a href="#reservation" class="navbar-link hover-underline">
               <div class="separator"></div>
+              <span class="nav-index" aria-hidden="true">04</span>
               <span class="span">Reserve</span>
             </a>
           </li>
           <li class="navbar-item">
             <a href="#contact" class="navbar-link hover-underline">
               <div class="separator"></div>
+              <span class="nav-index" aria-hidden="true">05</span>
               <span class="span">Contact</span>
             </a>
           </li>
         </ul>
 
-        <div class="text-center">
+        <div class="navbar-contact">
           <p class="headline-1 navbar-title">Find Us</p>
           <address class="body-4">
             Westlands Avenue,<br>
@@ -153,7 +160,8 @@
         <span class="text text-2" aria-hidden="true">Reserve a Table</span>
       </a>
 
-      <button class="nav-open-btn" aria-label="Open menu" data-nav-toggler>
+      <button class="nav-open-btn" aria-label="Open menu" aria-controls="primary-navigation"
+        aria-expanded="false" data-nav-toggler>
         <span class="line line-1"></span>
         <span class="line line-2"></span>
         <span class="line line-3"></span>
@@ -416,16 +424,16 @@
               <div class="menu-card hover-card">
                 <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
                   <img src="./assets/images/menu-1.png" width="100" height="100" loading="lazy"
-                    alt="Kachumbari Salad" class="img-cover">
+                    alt="Greek Salad" class="img-cover">
                 </figure>
                 <div>
                   <div class="title-wrapper">
-                    <h3 class="title-3"><a href="#" class="card-title">Kachumbari Salad</a></h3>
+                    <h3 class="title-3"><a href="#" class="card-title">Greek Salad</a></h3>
                     <span class="badge label-1">Seasonal</span>
-                    <span class="span title-2">KES 850</span>
+                    <span class="span title-2">KES 1,250</span>
                   </div>
                   <p class="card-text label-1">
-                    Tomatoes, onion, fresh coriander, chilli, lime — Kenya's classic side, done right.
+                    Tomatoes, green bell pepper, sliced cucumber, onion, olives, and feta cheese.
                   </p>
                 </div>
               </div>
@@ -435,15 +443,15 @@
               <div class="menu-card hover-card">
                 <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
                   <img src="./assets/images/menu-2.png" width="100" height="100" loading="lazy"
-                    alt="Coastal Pilau" class="img-cover">
+                    alt="Lasagne" class="img-cover">
                 </figure>
                 <div>
                   <div class="title-wrapper">
-                    <h3 class="title-3"><a href="#" class="card-title">Coastal Pilau</a></h3>
-                    <span class="span title-2">KES 1,400</span>
+                    <h3 class="title-3"><a href="#" class="card-title">Lasagne</a></h3>
+                    <span class="span title-2">KES 2,300</span>
                   </div>
                   <p class="card-text label-1">
-                    Long-grain rice cooked in spiced beef stock with cumin, cardamom, and cinnamon.
+                    Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
                   </p>
                 </div>
               </div>
@@ -453,15 +461,15 @@
               <div class="menu-card hover-card">
                 <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
                   <img src="./assets/images/menu-3.png" width="100" height="100" loading="lazy"
-                    alt="Roasted Butternut Soup" class="img-cover">
+                    alt="Butternut Pumpkin" class="img-cover">
                 </figure>
                 <div>
                   <div class="title-wrapper">
-                    <h3 class="title-3"><a href="#" class="card-title">Roasted Butternut Soup</a></h3>
-                    <span class="span title-2">KES 750</span>
+                    <h3 class="title-3"><a href="#" class="card-title">Butternut Pumpkin</a></h3>
+                    <span class="span title-2">KES 850</span>
                   </div>
                   <p class="card-text label-1">
-                    Rift Valley butternut, coconut cream, ginger, and toasted pumpkin seeds.
+                    Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.
                   </p>
                 </div>
               </div>
@@ -471,16 +479,16 @@
               <div class="menu-card hover-card">
                 <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
                   <img src="./assets/images/menu-4.png" width="100" height="100" loading="lazy"
-                    alt="Wagyu Tenderloin" class="img-cover">
+                    alt="Tokusen Wagyu" class="img-cover">
                 </figure>
                 <div>
                   <div class="title-wrapper">
-                    <h3 class="title-3"><a href="#" class="card-title">Wagyu Tenderloin</a></h3>
+                    <h3 class="title-3"><a href="#" class="card-title">Tokusen Wagyu</a></h3>
                     <span class="badge label-1">New</span>
-                    <span class="span title-2">KES 4,200</span>
+                    <span class="span title-2">KES 3,900</span>
                   </div>
                   <p class="card-text label-1">
-                    200g A5 Wagyu, charcoal grilled, black garlic butter, hand-cut chips.
+                    Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
                   </p>
                 </div>
               </div>
@@ -490,15 +498,15 @@
               <div class="menu-card hover-card">
                 <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
                   <img src="./assets/images/menu-5.png" width="100" height="100" loading="lazy"
-                    alt="Stuffed Avocado" class="img-cover">
+                    alt="Olivas Rellenas" class="img-cover">
                 </figure>
                 <div>
                   <div class="title-wrapper">
-                    <h3 class="title-3"><a href="#" class="card-title">Stuffed Avocado</a></h3>
-                    <span class="span title-2">KES 1,100</span>
+                    <h3 class="title-3"><a href="#" class="card-title">Olivas Rellenas</a></h3>
+                    <span class="span title-2">KES 1,700</span>
                   </div>
                   <p class="card-text label-1">
-                    Kenyan avocado, crab salad, roasted red pepper, citrus vinaigrette.
+                    Avocados with crab meat, red onion, crab salad stuffed red bell pepper and green bell pepper.
                   </p>
                 </div>
               </div>
@@ -508,15 +516,15 @@
               <div class="menu-card hover-card">
                 <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
                   <img src="./assets/images/menu-6.png" width="100" height="100" loading="lazy"
-                    alt="Lake Victoria Tilapia" class="img-cover">
+                    alt="Opu Fish" class="img-cover">
                 </figure>
                 <div>
                   <div class="title-wrapper">
-                    <h3 class="title-3"><a href="#" class="card-title">Lake Victoria Tilapia</a></h3>
-                    <span class="span title-2">KES 1,950</span>
+                    <h3 class="title-3"><a href="#" class="card-title">Opu Fish</a></h3>
+                    <span class="span title-2">KES 4,400</span>
                   </div>
                   <p class="card-text label-1">
-                    Whole tilapia, charcoal grilled, tomato mchuzi sauce, steamed greens.
+                    Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.
                   </p>
                 </div>
               </div>
@@ -883,7 +891,7 @@
           <ul class="footer-list">
             <li><a href="https://instagram.com/iambrianotieno"         target="_blank" rel="noopener noreferrer" class="label-2 footer-link hover-underline">Instagram</a></li>
             <li><a href="https://x.com/itsBrianOtieno"                 target="_blank" rel="noopener noreferrer" class="label-2 footer-link hover-underline">X (Twitter)</a></li>
-            <li><a href="https://linkedin.com/in/brian-obonyo-238635298/" target="_blank" rel="noopener noreferrer" class="label-2 footer-link hover-underline">LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/in/brianobonyo/" target="_blank" rel="noopener noreferrer" class="label-2 footer-link hover-underline">LinkedIn</a></li>
             <li><a href="https://wa.me/254741522175"                    target="_blank" rel="noopener noreferrer" class="label-2 footer-link hover-underline">WhatsApp</a></li>
             <li><a href="https://maps.google.com/?q=Westlands,Nairobi"  target="_blank" rel="noopener noreferrer" class="label-2 footer-link hover-underline">Google Maps</a></li>
           </ul>
@@ -909,6 +917,21 @@
   <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
     <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
   </a>
+
+  <nav class="mobile-quick-nav" aria-label="Quick navigation">
+    <a href="#home" class="quick-nav-link active" aria-current="page">
+      <ion-icon name="home-outline" aria-hidden="true"></ion-icon>
+      <span>Home</span>
+    </a>
+    <a href="#menu" class="quick-nav-link">
+      <ion-icon name="restaurant-outline" aria-hidden="true"></ion-icon>
+      <span>Menu</span>
+    </a>
+    <a href="#reservation" class="quick-nav-link">
+      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+      <span>Reserve</span>
+    </a>
+  </nav>
 
   <!-- Ionicons -->
   <script type="module"  src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
